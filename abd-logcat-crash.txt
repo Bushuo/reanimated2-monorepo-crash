@@ -1,0 +1,116 @@
+adb logcat
+12-07 09:35:10.615  2403  2457 E ReactNativeJNI: logMarker RUN_JS_BUNDLE_END                                                                                                                                
+12-07 09:35:10.630  2403  2457 I ReactNativeJS: Running "reanimated2monorepo" with {"rootTag":1}                                                                                                            
+12-07 09:35:10.636  2403  2408 I art     : Do partial code cache collection, code=27KB, data=29KB                                                                                                           
+12-07 09:35:10.637  2403  2408 I art     : After code cache collection, code=22KB, data=26KB                                                                                                                
+12-07 09:35:10.637  2403  2408 I art     : Increasing code cache capacity to 128KB                                                                                                                          
+12-07 09:35:10.772  3135  3616 D EnterpriseController: netId is 0                                                                                                                                           
+12-07 09:35:10.772  3135  3616 D Netd    : getNetworkForDns: using netid 517 for uid 10251                                                                                                                  
+12-07 09:35:10.772  3135  3616 D DnsProxyListener: DNSDBG::dns addrinfo af 0                                                                                                                                
+12-07 09:35:10.931  2403  2403 D TextView: setTypeface with style : 0                                                                                                                                       
+12-07 09:35:11.033  2403  2403 I HermesVM: JSI rethrowing JS exception: Cannot delete property 'callback' of undefined                                                                                      
+12-07 09:35:11.033  2403  2403 I HermesVM:                                                                                                                                                                  
+12-07 09:35:11.033  2403  2403 I HermesVM: TypeError: Cannot delete property 'callback' of undefined                                                                                                        
+12-07 09:35:11.033  2403  2403 I HermesVM:     at decorateAnimation (JavaScript:1:276)                                                                                                                      
+12-07 09:35:11.033  2403  2403 I HermesVM:     at decorateAnimation (native)                                                                                                                                
+12-07 09:35:11.033  2403  2403 I HermesVM:     at _f (JavaScript:1:243)                                                                                                                                     
+12-07 09:35:11.033  2403  2403 I HermesVM:     at defineAnimation (JavaScript:1:624)                                                                                                                        
+12-07 09:35:11.033  2403  2403 I HermesVM:     at defineAnimation (native)                                                                                                                                  
+12-07 09:35:11.033  2403  2403 I HermesVM:     at withTiming (JavaScript:1:120)                                                                                                                             
+12-07 09:35:11.033  2403  2403 I HermesVM:     at withTiming (native)                                                                                                                                       
+12-07 09:35:11.033  2403  2403 I HermesVM:     at _f (JavaScript:1:93)                                                                                                                                      
+12-07 09:35:11.033  2403  2403 I HermesVM:     at _f (native)                                                                                                                                               
+12-07 09:35:11.033  2403  2403 I HermesVM:     at styleUpdater (JavaScript:1:234)                                                                                                                           
+12-07 09:35:11.033  2403  2403 I HermesVM:     at styleUpdater (native)                                                                                                                                     
+12-07 09:35:11.033  2403  2403 I HermesVM:     at _f (JavaScript:1:113)                                                                                                                                     
+12-07 09:35:11.033  2403  2403 I HermesVM:     at _f (native)                                                                                                                                               
+12-07 09:35:11.036  2403  2403 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 2403 (imated2monorepo)                                                                                                  
+12-07 09:35:11.036  3010  3010 W         : debuggerd: handling request: pid=2403 uid=10251 gid=10251 tid=2403                                                                                               
+12-07 09:35:11.106  2478  2478 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***                                                                                                  
+12-07 09:35:11.107  2478  2478 F DEBUG   : Build fingerprint: 'samsung/zerofltexx/zeroflte:7.0/NRD90M/G920FXXS6ETI6:user/release-keys'                                                                      
+12-07 09:35:11.107  2478  2478 F DEBUG   : Revision: '11'                                                                                                                                                   
+12-07 09:35:11.107  2478  2478 F DEBUG   : ABI: 'arm64'                                                                                                                                                     
+12-07 09:35:11.107  2478  2478 F DEBUG   : pid: 2403, tid: 2403, name: imated2monorepo  >>> com.reanimated2monorepo <<<                                                                                     
+12-07 09:35:11.107  2478  2478 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------                                                                                                      
+12-07 09:35:11.107  2478  2478 F DEBUG   :     x0   0000000000000000  x1   0000000000000963  x2   0000000000000006  x3   0000000000000008                                                                   
+12-07 09:35:11.107  2478  2478 F DEBUG   :     x4   0000000000000000  x5   4000000000000000  x6   0000000000808000  x7   fefefefefefefefe                                                                   
+12-07 09:35:11.107  2478  2478 F DEBUG   :     x8   0000000000000083  x9   ffffffffffffffdf  x10  0000000000000000  x11  0000000000000001                                                                   
+12-07 09:35:11.107  2478  2478 F DEBUG   :     x12  ffffffffffffffff  x13  ffffffffffffffff  x14  ffffffffffffffff  x15  0000000000000000                                                                   
+12-07 09:35:11.107  2478  2478 F DEBUG   :     x16  00000071c60abee0  x17  00000071c60555ac  x18  0000000071e06e9c  x19  00000071ca37cb40                                                                   
+12-07 09:35:11.107  2478  2478 F DEBUG   :     x20  0000000000000006  x21  00000071ca37ca98  x22  000000000000000b  x23  00000071ca37cb30                                                                   
+12-07 09:35:11.107  2478  2478 F DEBUG   :     x24  0000000000000000  x25  0000007189af99f0  x26  00000071ca37cb30  x27  0000000000000001                
+12-07 09:35:11.107  2478  2478 F DEBUG   :     x28  00000071851eb474  x29  0000007fe07f2310  x30  00000071c6052a54                                                                                          
+12-07 09:35:11.107  2478  2478 F DEBUG   :     sp   0000007fe07f22f0  pc   00000071c60555b4  pstate 0000000000000000                                                                                        
+12-07 09:35:11.129  2478  2478 F DEBUG   :                                                                                                                                                                  
+12-07 09:35:11.129  2478  2478 F DEBUG   : backtrace:                                                                                                                                                       
+12-07 09:35:11.130  2478  2478 F DEBUG   :     #00 pc 000000000006b5b4  /system/lib64/libc.so (tgkill+8)                                                                                                    
+12-07 09:35:11.130  2478  2478 F DEBUG   :     #01 pc 0000000000068a50  /system/lib64/libc.so (pthread_kill+64)                                                                                             
+12-07 09:35:11.130  2478  2478 F DEBUG   :     #02 pc 0000000000023f68  /system/lib64/libc.so (raise+24)                                                                                                    
+12-07 09:35:11.130  2478  2478 F DEBUG   :     #03 pc 000000000001c9ec  /system/lib64/libc.so (abort+52)                                                                                                    
+12-07 09:35:11.130  2478  2478 F DEBUG   :     #04 pc 00000000000bb690  /data/app/com.reanimated2monorepo-2/lib/arm64/libfbjni.so (_Unwind_SetGR+16)                                                        
+12-07 09:35:11.130  2478  2478 F DEBUG   :     #05 pc 00000000000b8550  /data/app/com.reanimated2monorepo-2/lib/arm64/libfbjni.so (__gxx_personality_v0+244)                                                
+12-07 09:35:11.130  2478  2478 F DEBUG   :     #06 pc 000000000026a00c  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so                                                                          
+12-07 09:35:11.130  2478  2478 F DEBUG   :     #07 pc 000000000026a514  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_Unwind_Resume+116)                                                     
+12-07 09:35:11.130  2478  2478 F DEBUG   :     #08 pc 000000000002dec0  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl4callERKNS_3jsi8FunctionERKNS2_5Va
+lueEPS7_m+988)                                                                                                                                                                                              
+12-07 09:35:11.130  2478  2478 F DEBUG   :     #09 pc 00000000000578a8  /data/app/com.reanimated2monorepo-2/lib/arm64/libreanimated.so                                                                      
+12-07 09:35:11.130  2478  2478 F DEBUG   :     #10 pc 0000000000034b70  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl9HFContext4funcEPvPN6hermes2vm7Run
+timeENS5_10NativeArgsE+324)                                                                                                                                                                                 
+12-07 09:35:11.131  2478  2478 F DEBUG   :     #11 pc 00000000000540e8  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so                                                                          
+12-07 09:35:11.131  2478  2478 F DEBUG   :     #12 pc 0000000000057bb8  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so                                                                          
+12-07 09:35:11.131  2478  2478 F DEBUG   :     #13 pc 000000000005539c  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so                                                                          
+12-07 09:35:11.131  2478  2478 F DEBUG   :     #14 pc 000000000002dd18  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl4callERKNS_3jsi8FunctionERKNS2_5Va
+lueEPS7_m+564)                                                                                                                                                                                              
+12-07 09:35:11.131  2478  2478 F DEBUG   :     #15 pc 00000000000578a8  /data/app/com.reanimated2monorepo-2/lib/arm64/libreanimated.so                                                                      
+12-07 09:35:11.132  2478  2478 F DEBUG   :     #16 pc 0000000000034b70  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl9HFContext4funcEPvPN6hermes2vm7Run
+timeENS5_10NativeArgsE+324)
+12-07 09:35:11.132  2478  2478 F DEBUG   :     #17 pc 00000000000540e8  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.132  2478  2478 F DEBUG   :     #18 pc 0000000000057bb8  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.132  2478  2478 F DEBUG   :     #19 pc 000000000005539c  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.132  2478  2478 F DEBUG   :     #20 pc 000000000002dd18  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl4callERKNS_3jsi8FunctionERKNS2_5Va
+lueEPS7_m+564)
+12-07 09:35:11.132  2478  2478 F DEBUG   :     #21 pc 00000000000578a8  /data/app/com.reanimated2monorepo-2/lib/arm64/libreanimated.so
+12-07 09:35:11.132  2478  2478 F DEBUG   :     #22 pc 0000000000034b70  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl9HFContext4funcEPvPN6hermes2vm7Run
+timeENS5_10NativeArgsE+324)
+12-07 09:35:11.132  2478  2478 F DEBUG   :     #23 pc 00000000000540e8  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #24 pc 0000000000057bb8  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #25 pc 000000000005539c  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #26 pc 000000000002dd18  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl4callERKNS_3jsi8FunctionERKNS2_5Va
+lueEPS7_m+564)
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #27 pc 00000000000578a8  /data/app/com.reanimated2monorepo-2/lib/arm64/libreanimated.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #28 pc 0000000000034b70  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl9HFContext4funcEPvPN6hermes2vm7Run
+timeENS5_10NativeArgsE+324)
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #29 pc 00000000000540e8  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #30 pc 0000000000057bb8  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #31 pc 000000000005539c  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #32 pc 000000000002dd18  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl4callERKNS_3jsi8FunctionERKNS2_5Va
+lueEPS7_m+564)
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #33 pc 00000000000578a8  /data/app/com.reanimated2monorepo-2/lib/arm64/libreanimated.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #34 pc 0000000000034b70  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl9HFContext4funcEPvPN6hermes2vm7Run
+timeENS5_10NativeArgsE+324)
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #35 pc 00000000000540e8  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #36 pc 0000000000057bb8  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #37 pc 000000000005539c  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #38 pc 000000000002dd18  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl4callERKNS_3jsi8FunctionERKNS2_5Va
+lueEPS7_m+564)
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #39 pc 0000000000057844  /data/app/com.reanimated2monorepo-2/lib/arm64/libreanimated.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #40 pc 0000000000034b70  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl9HFContext4funcEPvPN6hermes2vm7Run
+timeENS5_10NativeArgsE+324)
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #41 pc 0000000000042638  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #42 pc 000000000002dd18  /data/app/com.reanimated2monorepo-2/lib/arm64/libhermes.so (_ZN8facebook6hermes17HermesRuntimeImpl4callERKNS_3jsi8FunctionERKNS2_5Va
+lueEPS7_m+564)
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #43 pc 000000000005aae0  /data/app/com.reanimated2monorepo-2/lib/arm64/libreanimated.so (_ZN10reanimated6Mapper7executeERN8facebook3jsi7RuntimeE+104)
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #44 pc 0000000000047ee8  /data/app/com.reanimated2monorepo-2/lib/arm64/libreanimated.so (_ZN10reanimated14MapperRegistry7executeERN8facebook3jsi7RuntimeE+72)
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #45 pc 0000000000041a94  /data/app/com.reanimated2monorepo-2/lib/arm64/libreanimated.so (_ZN10reanimated22NativeReanimatedModule8onRenderEd+296)
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #46 pc 000000000003cc94  /data/app/com.reanimated2monorepo-2/lib/arm64/libreanimated.so (_ZN8facebook3jni6detail13MethodWrapperIMN10reanimated22AnimationFram
+eCallbackEFvdEXadL_ZNS4_16onAnimationFrameEdEES4_vJdEE8dispatchENS0_9alias_refIPNS1_8JTypeForINS0_11HybridClassIS4_NS1_15BaseHybridClassEE8JavaPartENS0_7JObjectEvE11_javaobjectEEEOd+64)
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #47 pc 000000000003cbec  /data/app/com.reanimated2monorepo-2/lib/arm64/libreanimated.so (_ZN8facebook3jni6detail15FunctionWrapperIPFvNS0_9alias_refIPNS1_8JTy
+peForINS0_11HybridClassIN10reanimated22AnimationFrameCallbackENS1_15BaseHybridClassEE8JavaPartENS0_7JObjectEvE11_javaobjectEEEOdEXadL_ZNS1_13MethodWrapperIMS7_FvdEXadL_ZNS7_16onAnimationFrameEdEES7_vJdEE8
+dispatchESF_SG_EESE_vJdEE4callEP7_JNIEnvP8_jobjectd+72)
+12-07 09:35:11.133  2478  2478 F DEBUG   :     #48 pc 00000000005c1cc8  /data/app/com.reanimated2monorepo-2/oat/arm64/base.odex (offset 0x548000)
+12-07 09:35:11.992  2478  2478 E         : ro.debug_level = 0x4f4c
+12-07 09:35:11.992  2478  2478 E         : sys.mobilecare.preload = false
+12-07 09:35:11.995  3657  2479 W ActivityManager:   Force finishing activity com.reanimated2monorepo/.MainActivity
+12-07 09:35:11.995  3657  2479 W MultiScreenManagerService: moveTaskBackToDisplayIfNeeded(): root is not base activity
+12-07 09:35:11.998  3657  2479 D ActivityManager: moveToFront() : reason=finishActivity adjustFocus setFocusedActivity isAttached=true TaskRecord{34f947dd0 #30660 A=com.sec.android.app.launcher U=0 StackI
+d=0 sz=1}
