@@ -19,6 +19,7 @@ import Animated, {
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Row from './src/Row';
+import Girl from './dummy.svg';
 
 declare const global: {HermesInternal: null | {}};
 const Stack = createStackNavigator();
@@ -30,6 +31,7 @@ function HomeScreen() {
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>Home Screen</Text>
       <Button title="Navigate" onPress={() => navigation.navigate('Route')} />
+      <Girl width={100} height={100} />
     </View>
   );
 }
