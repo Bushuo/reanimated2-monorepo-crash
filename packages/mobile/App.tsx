@@ -9,17 +9,32 @@
  */
 
 import React from 'react';
-import {Button, View} from 'react-native';
+import {Button, Text, View} from 'react-native';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
   Easing,
 } from 'react-native-reanimated';
+import {NavigationContainer, useNavigation} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+import Row from './src/Row';
 
 declare const global: {HermesInternal: null | {}};
+const Stack = createStackNavigator();
 
-const App = () => {
+function HomeScreen() {
+  const navigation = useNavigation();
+
+  return (
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <Text>Home Screen</Text>
+      <Button title="Navigate" onPress={() => navigation.navigate('Route')} />
+    </View>
+  );
+}
+
+function Route() {
   const randomWidth = useSharedValue(10);
 
   const config = {
@@ -51,7 +66,19 @@ const App = () => {
           randomWidth.value = Math.random() * 350;
         }}
       />
+      <Row />
     </View>
+  );
+}
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Route" component={Route} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
